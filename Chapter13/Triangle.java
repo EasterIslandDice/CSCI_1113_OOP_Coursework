@@ -42,14 +42,14 @@ public class Triangle extends GeometricObject {
 	}
 	
 	
-	public double getArea(double side1, double side2, double side3){
+	public double getArea(){
 		double s = (side1 + side2 + side3) / 2;
 		double area = Math.sqrt(s * (s -side1) * (s - side2) * (s - side3));
 		return area;
 	}
 	
 	
-	public double getPerimeter(double side1, double side2, double side3){
+	public double getPerimeter(){
 		double perimeter = side1 + side2 + side3;
 		return perimeter;
 	}
