@@ -32,6 +32,6 @@ class ExtClassRWA {
 		userTriangle.setColor(color);
 		userTriangle.setFilled(filled);
 		
-		System.out.println("Area: " + userTriangle.getArea(side1, side2, side3) + "\nPerimeter: " + userTriangle.getPerimeter(side1, side2, side3) + "\nColor: " + color + "\nFilled: " + filled);
+		System.out.println("Area: " + userTriangle.getArea() + "\nPerimeter: " + userTriangle.getPerimeter(side1, side2, side3) + "\nColor: " + color + "\nFilled: " + filled);
 	}
 }
