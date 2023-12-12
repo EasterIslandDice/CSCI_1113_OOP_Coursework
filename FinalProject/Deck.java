@@ -11,4 +11,7 @@ public class Deck{
 			}
 		}
 	}
+		void ShuffleDeck(ArrayList<Card> deck){
+		Collections.shuffle(deck);
+	}
 }
