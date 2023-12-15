@@ -27,4 +27,5 @@ public enum Rank{
 
 	public String toString(){
 		return cardName;
+	}
 }
