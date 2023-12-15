@@ -1,4 +1,4 @@
-public class player{
+public class Player{
 	private Hand hand;
 	private String name;
 	
