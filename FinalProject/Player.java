@@ -2,7 +2,7 @@ public class Player{
 	private Hand hand;
 	private String name;
 	
-	public player(){
+	public Player(){
 		this.hand = new Hand();
 		this.name = "";
 	}
