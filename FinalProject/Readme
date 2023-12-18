@@ -1,1 +1,9 @@
 Contains the Final Project for Object-Oriented Programming I
+
+This project is a simple game of Blackjack utilizing object-oriented programming skills picked up from the course.
+
+I built this project as an extension of a previous project, a simple game of 21. That project used a single array of values and had no capability to hit or stand, nor
+did it have a dealer to play against.
+
+This project utilized an array of objects to represent the cards, had a dealer with simple AI, and allowed the player to choose whether to hit or stand.
+Additionally, this project has simple logic to determine the value of an Ace card in either hand when totalling the hand size.
