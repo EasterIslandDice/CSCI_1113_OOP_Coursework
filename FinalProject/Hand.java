@@ -7,13 +7,13 @@ public class Hand{
 		hand = new ArrayList<Card>();
 	}
 	
-	public void addDrawnCard(){
+	public void addDrawnCard(Deck deck){
 		hand.add(deck.drawCard());
 	}
 	
 	public int totalHand(){
-		int handValue;
-		int aceCount;
+		int handValue = 0;
+		int aceCount = 0;
 		
 		for(Card card: hand){
 			handValue += card.getRank().getCardValue();
@@ -27,5 +27,20 @@ public class Hand{
 			handValue += 10;
 		}
 		return handValue;
+	}
+	public String toString(){
+		String output ="";
+		for(Card card: hand){
+			output += card + " - ";
+		}
+		return output;
+	}
+	
+	public Card getCard(int index){
+		return hand.get(index);
+	}
+	
+	public void emptyHand(){
+		this.hand.clear();
 	}
 }

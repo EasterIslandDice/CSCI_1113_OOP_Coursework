@@ -20,11 +20,11 @@ public class Card{
 		return rank;
 	}
 	public int getValue(){
-		return rank.cardValue;
+		return rank.getCardValue();
 	}
 	
 	public String toString(){
-		return rank + " of " + suit + this.getValue();
+		return rank + " of " + suit + "(" + this.getValue() + ")";
 	}
 	
 }

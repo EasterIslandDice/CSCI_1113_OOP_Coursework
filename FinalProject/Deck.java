@@ -3,17 +3,19 @@ import java.util.*;
 public class Deck{
 	private ArrayList<Card> deck;
 	
-	Deck(){
-		deck = new ArrayList<Card>(52);
+	Deck(boolean full){
+		deck = new ArrayList<Card>();
+		if(full){
 		for(Suit s : Suit.values()) {
 			for(Rank r : Rank.values()){
 				deck.add(new Card(s, r));
 			}
+			}
 		}
 	}
 	
-	void ShuffleDeck(ArrayList<Card> deck){
-		Collections.shuffle(deck);
+	void shuffleDeck(Deck deck){
+		Collections.shuffle(this.deck, new Random());
 	}
 	
 	public Card drawCard(){
@@ -21,4 +23,9 @@ public class Deck{
 			this.deck.remove(0);
 			return drawnCard;
 		}
+	public int numberOfCards(){
+		return deck.size();
+		
+	}
+	
 }
